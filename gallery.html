@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Pluto's moon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-gallery.css">
+</head>
+<body>
+    <div class="grain-overlay"></div>
+
+    <header class="gallery-header">
+        <div class="header-content">
+            <a href="index.html" class="back-link">
+                <span class="back-arrow">←</span>
+                <span class="back-text">BACK TO HOME</span>
+            </a>
+            <h1 class="gallery-title">FULL GALLERY</h1>
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="original">ORIGINAL</button>
+                <button class="filter-btn" data-filter="fanart">FANART</button>
+                <button class="filter-btn" data-filter="2026">2026</button>
+                <button class="filter-btn" data-filter="2025">2025</button>
+                <button class="filter-btn" data-filter="2024">2024</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout-toggle">
+        <button class="toggle-btn active" data-layout="grid">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+            </svg>
+        </button>
+        <button class="toggle-btn" data-layout="masonry">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="9"></rect>
+                <rect x="14" y="3" width="7" height="5"></rect>
+                <rect x="14" y="12" width="7" height="9"></rect>
+                <rect x="3" y="16" width="7" height="5"></rect>
+            </svg>
+        </button>
+        <button class="toggle-btn" data-layout="list">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <rect x="3" y="4" width="2" height="4"></rect>
+                <rect x="3" y="10" width="2" height="4"></rect>
+                <rect x="3" y="16" width="2" height="4"></rect>
+            </svg>
+        </button>
+    </div>
+
+    <main class="gallery-main">
+        <div class="gallery-container grid-layout" id="galleryContainer">
+            
+            <div class="artwork-item" data-year="2026" data-type="fanart" data-id="1" data-description="ウマ娘、フォーエバーヤングのファンアートです。右下には実際の競走馬フォーエバーヤングを描きました。
+
+情報過多気味ですが、赤色をベースに統一することで見やすくしています。" data-description="説明をここに入力してください。">
+                <div class="artwork-inner">
+                    <img src="images/2026 (3).png" alt="Artwork 1" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">01</span>
+                        <h3 class="artwork-title">フォーエバーヤング</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2026</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type original-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2026" data-type="fanart" data-id="2" data-description="ウマ娘、キタサンブラックにバニースーツを着せたイラストです。バニースーツの質感と光沢を比較的上手く表現できたと思います。">
+                <div class="artwork-inner">
+                    <img src="images/2026 (4).png" alt="Artwork 2" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">02</span>
+                        <h3 class="artwork-title">キタサンブラック</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2026</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2026" data-type="fanart" data-id="3" data-description="水着を着たフリーレンが砂浜に佇むイラストです。白と青のコントラストを効かせた作品">
+                <div class="artwork-inner">
+                    <img src="images/2026 (5).png" alt="Artwork 3" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">03</span>
+                        <h3 class="artwork-title">フリーレン</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2026</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type original-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2026" data-type="original" data-id="4" data-description="とある元競走馬をモチーフにしたオリジナルのキャラクター、これは2体目です。元の競走馬の馬名をヒントに連想し、幽霊感を出すことを念頭にキャラデザインした結果この完成品となりました。">
+                <div class="artwork-inner">
+                    <img src="images/2026.png" alt="Artwork 4" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">04</span>
+                        <h3 class="artwork-title">競走馬モチーフオリジナルキャラ２</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2026</span>
+                            <span class="artwork-category">CHARACTER DESIGN</span>
+                            <span class="artwork-type fanart-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="original" data-id="5" data-description="とある元競走馬をモチーフにしたオリジナルのキャラクターで、このように三面図作成しました。元の競走馬は競馬ファンから誰もが知る名馬で、元の競走馬をモチーフにデザインできたと思います。現在個人的なYouTubeチャンネルにて、マスコットキャラとしてこのキャラクターを使用しています。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (12).png" alt="Artwork 5" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">05</span>
+                        <h3 class="artwork-title">競走馬モチーフオリジナルキャラ１、三面図サンプル</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">CHARACTER DESIGN</span>
+                            <span class="artwork-type original-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="original" data-id="6" data-description="シロイワヤギをモチーフにデザインした、オリジナルの少年キャラクターの立ち絵です。青と白を基調にデザインしました。キャラクターデザイン鍛錬の一環でデザインしたキャラクターの一つです。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (5).png" alt="Artwork 6" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">06</span>
+                        <h3 class="artwork-title">オリジナルキャラ１立ち絵</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">CHARACTER DESIGN</span>
+                            <span class="artwork-type fanart-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="original" data-id="7" data-description="シロイワヤギをモチーフにデザインした、オリジナルの少年キャラクターの立ち絵2です。別角度から描きました。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (6).png" alt="Artwork 7" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">07</span>
+                        <h3 class="artwork-title">オリジナルキャラ１立ち絵(2)</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">CHARACTER DESIGN</span>
+                            <span class="artwork-type original-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="original" data-id="8" data-description="厚塗りの練習で、製作した作品です。キャラクターはオリジナルキャラです。
+
+">
+                <div class="artwork-inner">
+                    <img src="images/2025 (2).png" alt="Artwork 8" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">08</span>
+                        <h3 class="artwork-title">オリジナルキャラ２一枚絵</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">CHARACTER DESIGN</span>
+                            <span class="artwork-type fanart-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="original" data-id="9" data-description="厚塗りの練習で製作した作品、その2です。
+
+飴や唇など質感表現を重視し製作。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (16).png" alt="Artwork 9" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">09</span>
+                        <h3 class="artwork-title">オリジナルキャラ２一枚絵（２）</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">CHARACTER DESIGN</span>
+                            <span class="artwork-type original-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="fanart" data-id="10" data-description="チェンソーマンのマキマを中心にしたイラスト。二次創作品ですが、同時に世相も風刺した作品。全体的に厚塗り風で描きました。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (3).png" alt="Artwork 10" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">10</span>
+                        <h3 class="artwork-title">支配</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="original" data-id="11" data-description="これも厚塗りの練習の一環で描きました。キャラはオリジナルです。練習作品ですが、完成度が高かったため、作品集として展示しました。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (4).png" alt="Artwork 11" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">11</span>
+                        <h3 class="artwork-title">オッドアイの男の子</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type original-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="fanart" data-id="12" data-description="ウマ娘のオルフェーヴルのファンアートです。厚塗り風に仕上げています。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (11).png" alt="Artwork 12" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">12</span>
+                        <h3 class="artwork-title">オルフェーヴル</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="fanart" data-id="13" data-description="ゼルダシリーズ、ブレスオブザワイルドのファンアートです。クリア記念に描きました。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (1).png" alt="Artwork 13" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">13</span>
+                        <h3 class="artwork-title">ブレスオブザワイルド</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type original-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2025" data-type="original" data-id="14" data-description="モノクロ風の厚塗りイラストです。こちらも厚塗り練習の一環で描いた作品です。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (14).png" alt="Artwork 14" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">14</span>
+                        <h3 class="artwork-title">モノクロ</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2024" data-type="original" data-id="15" data-description="タイトル通り、線画、目と髪の練習の為に作成しました。イラストとして見栄えが良かった為作品集として展示。">
+                <div class="artwork-inner">
+                    <img src="images/2024 (6).png" alt="Artwork 15" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">15</span>
+                        <h3 class="artwork-title">髪と目のための習作</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2024</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type original-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2024" data-type="original" data-id="16" data-description="少年を上から眺めているかのような目線で、描いた作品。全体的に夏っぽさを表現しました。">
+                <div class="artwork-inner">
+                    <img src="images/2024.png" alt="Artwork 16" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">16</span>
+                        <h3 class="artwork-title">2024、夏、バス停</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2024</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2024" data-type="original" data-id="17" data-description="厚塗り練習の一環で描いた少年です。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (17).png" alt="Artwork 17" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">17</span>
+                        <h3 class="artwork-title">男の子</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2024</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type original-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-item" data-year="2024" data-type="original" data-id="18" data-description="スケードボードで遊び疲れ、休む少年を描いた作品です。">
+                <div class="artwork-inner">
+                    <img src="images/2024 (9).png" alt="Artwork 18" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">18</span>
+                        <h3 class="artwork-title">スケードボード</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2024</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="artwork-item" data-year="2024" data-type="fanart" data-id="19" data-description="ウマ娘のハルウララを描いたファンアートです。">
+                <div class="artwork-inner">
+                    <img src="images/2024 (5).png" alt="Artwork 19" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">19</span>
+                        <h3 class="artwork-title">ハルウララ</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2024</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="artwork-item" data-year="2024" data-type="fanart" data-id="20" data-description="ウマ娘のフリオーソを描いたファンアートです。">
+                <div class="artwork-inner">
+                    <img src="images/2024 (4).png" alt="Artwork 20" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">20</span>
+                        <h3 class="artwork-title">フリオーソ</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2024</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="artwork-item" data-year="2026" data-type="original" data-id="21" data-description="2026年の午年を記念して描いた作品。キャラクターはオリジナルです。水着の光沢感を上手く表現できた作品。">
+                <div class="artwork-inner">
+                    <img src="images/2026 (7).jpeg" alt="Artwork 21" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">21</span>
+                        <h3 class="artwork-title">2026午年記念イラスト(オリキャラ)</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2026</span>
+                            <span class="artwork-category">CONCEPT</span>
+                            <span class="artwork-type fanart-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="artwork-item" data-year="2025" data-type="fanart" data-id="22" data-description="ポケモンカードゲームのかけだし調査員を描いたファンアートです。比較的にシンプルに描きました。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (8).png" alt="Artwork 22" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">22</span>
+                        <h3 class="artwork-title">駆け出し調査員</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="artwork-item" data-year="2025" data-type="fanart" data-id="23" data-description="ウマ娘のハッピーミークを描いたファンアートです。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (7).png" alt="Artwork 23" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">23</span>
+                        <h3 class="artwork-title">ハッピーミーク</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="artwork-item" data-year="2025" data-type="fanart" data-id="23" data-description="NetflixのWednesdayの主人公ウェンズデーアダムスを描いたファンアート、背景は大胆に赤で黒と対比するように描きました。">
+                <div class="artwork-inner">
+                    <img src="images/2025 (9).png" alt="Artwork 24" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">24</span>
+                        <h3 class="artwork-title">Wednesday</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2025</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                               <div class="artwork-item" data-year="2024" data-type="original" data-id="23" data-description="窓の前に立つ少年を描いた作品。全体的に暗い中窓から刺す光に少年を立たせ、際立立たせています。">
+                <div class="artwork-inner">
+                    <img src="images/2024 (10).png" alt="Artwork 25" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">25</span>
+                        <h3 class="artwork-title">窓</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2024</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">ORIGINAL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 <div class="artwork-item" data-year="2024" data-type="fanart" data-id="23" data-description="ブラックジャックのファンアートです。比較的にシンプルめに描きました。">
+                <div class="artwork-inner">
+                    <img src="images/2024 (1).png" alt="Artwork 25" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="artwork-overlay">
+                        <span class="artwork-number">25</span>
+                        <h3 class="artwork-title">ブラックジャック</h3>
+                        <div class="artwork-meta">
+                            <span class="artwork-year">2024</span>
+                            <span class="artwork-category">ILLUSTRATION</span>
+                            <span class="artwork-type fanart-tag">FANART</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load-more-wrapper">
+            <button class="load-more-btn" id="loadMoreBtn">
+                <span class="btn-text">LOAD MORE</span>
+                <span class="btn-arrow">↓</span>
+            </button>
+        </div>
+    </main>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">×</button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-info">
+                <span class="lightbox-number"></span>
+                <h3 class="lightbox-title"></h3>
+                <div class="lightbox-meta">
+                    <span class="lightbox-year"></span>
+                    <span class="lightbox-category"></span>
+                </div>
+                <p class="lightbox-description"></p>
+            </div>
+        </div>
+        <button class="lightbox-nav lightbox-prev">‹</button>
+        <button class="lightbox-nav lightbox-next">›</button>
+    </div>
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>© 2026 PLUTO'S MOON. ALL RIGHTS RESERVED.</p>
+            <a href="index.html" class="footer-link">BACK TO HOME</a>
+        </div>
+    </footer>
+
+    <script src="js/script-gallery.js"></script>
+</body>
+</html>

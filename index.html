@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluto's moon - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="celestial-background">
+        <div class="pluto"></div>
+        <div class="moon"></div>
+        <div class="orbit"></div>
+        <div class="stars"></div>
+    </div>
+    <div class="overlay"></div>
+
+    <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-content">
+            <a href="#home" class="nav-link active" data-section="home">HOME</a>
+            <a href="#gallery-preview" class="nav-link" data-section="gallery-preview">WORKS</a>
+            <a href="#about" class="nav-link" data-section="about">ABOUT</a>
+            <a href="#contact" class="nav-link" data-section="contact">CONTACT</a>
+            <a href="gallery.html" class="nav-link nav-link-external" target="_blank">
+                FULL GALLERY
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left: 4px;">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span class="scroll-text">SCROLL</span>
+    </div>
+
+    <main class="content-wrapper">
+        <section id="home" class="section active" data-bg="0">
+            <div class="section-content">
+                <div class="hero-content">
+                    <div class="glitch-wrapper">
+                        <h1 class="glitch" data-text="PLUTO'S MOON">PLUTO'S MOON</h1>
+                    </div>
+                    <div class="title-lines">
+                        <div class="line"></div>
+                        <p class="subtitle">ILLUSTRATOR / CHARACTER DESIGN</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="social-grid">
+                        <a href="https://twitter.com/mrAntares1111" target="_blank" class="social-item" rel="noopener">
+                            <span class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </span>
+                            <span class="social-label">TWITTER</span>
+                        </a>
+                        <a href="https://www.instagram.com/mrantares1111" target="_blank" class="social-item" rel="noopener">
+                            <span class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </span>
+                            <span class="social-label">INSTAGRAM</span>
+                        </a>
+                        <a href="https://www.pixiv.net/users/10430319" target="_blank" class="social-item" rel="noopener">
+                            <span class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M4.935 0A4.924 4.924 0 0 0 0 4.935v14.13A4.924 4.924 0 0 0 4.935 24h14.13A4.924 4.924 0 0 0 24 19.065V4.935A4.924 4.924 0 0 0 19.065 0zm7.81 4.547c2.181 0 4.058.676 5.399 1.847a6.118 6.118 0 0 1 2.116 4.66c.005 1.854-.88 3.476-2.257 4.563-1.375 1.092-3.225 1.697-5.258 1.697H9.547v2.805H6.785V4.547zm-3.158 2.76v4.547h3.198c1.201 0 2.15-.315 2.822-.97.673-.654 1.024-1.505 1.024-2.424 0-.919-.35-1.77-1.024-2.424-.672-.655-1.62-.97-2.822-.97z"/>
+                                </svg>
+                            </span>
+                            <span class="social-label">PIXIV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery-preview" class="section" data-bg="1">
+            <div class="section-content">
+                <h2 class="section-title" data-text="WORKS">WORKS</h2>
+                <div class="gallery-intro">
+                    <p class="gallery-description">キャラクターイラストを中心に制作しています。
+
+光沢素材や肌の質感表現、シルエットの分かりやすさを意識し、
+視認性と完成度の高いイラストを目指しています。
+
+強いコントラストの配色から、柔らかいパステル調までキャラクターデザインも対応可能です。
+</p>
+                </div>
+                <div class="gallery-masonry">
+                    <div class="gallery-card" data-title="フォーエバーヤング（FANART）" data-year="2026">
+                        <div class="card-inner">
+                            <img src="images/2026 (3).png" alt="Artwork 1" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="card-overlay">
+                                <span class="card-number">01</span>
+                                <h3 class="card-title">フォーエバーヤング（FANART）</h3>
+                                <p class="card-year">2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-title="キタサンブラック（FANART）" data-year="2026">
+                        <div class="card-inner">
+                            <img src="images/2026 (4).png" alt="Artwork 2" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="card-overlay">
+                                <span class="card-number">02</span>
+                                <h3 class="card-title">キタサンブラック（FANART）</h3>
+                                <p class="card-year">2026</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-title="オリジナルキャラ１立ち絵" data-year="2025">
+                        <div class="card-inner">
+                            <img src="images/2025 (5).png" alt="Artwork 3" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="card-overlay">
+                                <span class="card-number">03</span>
+                                <h3 class="card-title">オリジナルキャラ１立ち絵</h3>
+                                <p class="card-year">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-title="オリジナルキャラ２一枚絵" data-year="2025">
+                        <div class="card-inner">
+                            <img src="images/2025 (2).png" alt="Artwork 4" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="card-overlay">
+                                <span class="card-number">04</span>
+                                <h3 class="card-title">オリジナルキャラ２一枚絵</h3>
+                                <p class="card-year">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-title="2024、夏、バス停（original）" data-year="2024">
+                        <div class="card-inner">
+                            <img src="images/2024.png" alt="Artwork 5" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="card-overlay">
+                                <span class="card-number">05</span>
+                                <h3 class="card-title">2024、夏、バス停</h3>
+                                <p class="card-year">2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-card" data-title="競走馬モチーフオリジナルキャラ１、三面図サンプル" data-year="2025">
+                        <div class="card-inner">
+                            <img src="images/2025 (12).png" alt="Artwork 6" loading="lazy" onerror="this.parentElement.classList.add('placeholder')">
+                            <div class="card-overlay">
+                                <span class="card-number">06</span>
+                                <h3 class="card-title">競走馬モチーフオリジナルキャラ１、三面図サンプル</h3>
+                                <p class="card-year">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all-wrapper">
+                    <a href="gallery.html" target="_blank" class="view-all-btn" rel="noopener">
+                        <span class="btn-text">VIEW FULL GALLERY</span>
+                        <span class="btn-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section" data-bg="2">
+            <div class="section-content">
+                <h2 class="section-title" data-text="ABOUT">ABOUT</h2>
+                <div class="about-content">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-image">
+                                <img src="images/アイコン.png" alt="Profile" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="profile-placeholder" style="display: none;">
+                                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 2a10 10 0 0 1 0 20"></path>
+                                        <circle cx="12" cy="8" r="3"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Antares。</h3>
+                            <p class="profile-bio">
+                                幅広く物書き活動をしています。 主に一枚絵から、キャラクターデザインなど。
+動画制作やウェブデザイン制作なども得意としています。 独自なデジタルアートや小説、漫画制作など、取り組んでいます。
+ギャラリーではこれまで書いたオリジナル作品、二次創作系イラストなどを展示しています。
+                            </p>
+                            <p class="profile-bio">
+                            </p>
+                            <div class="profile-tags">
+                                <span class="tag">デジタルイラスト</span>
+                                <span class="tag">キャラクターデザイン</span>
+                                <span class="tag">WEBデザイン</span>
+                                <span class="tag">コンセプトアート</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section" data-bg="3">
+            <div class="section-content">
+                <h2 class="section-title" data-text="CONTACT">CONTACT</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form" action="https://formspree.io/f/mdaydqwe" method="POST">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="text" id="name" name="name" placeholder=" " required>
+                                <label for="name">NAME *</label>
+                                <div class="field-line"></div>
+                            </div>
+                            <div class="form-field">
+                                <input type="email" id="email" name="email" placeholder=" " required>
+                                <label for="email">EMAIL *</label>
+                                <div class="field-line"></div>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" id="subject" name="subject" placeholder=" ">
+                            <label for="subject">SUBJECT</label>
+                            <div class="field-line"></div>
+                        </div>
+                        <div class="form-field">
+                            <textarea id="message" name="message" rows="6" placeholder=" " required></textarea>
+                            <label for="message">MESSAGE *</label>
+                            <div class="field-line"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">SEND MESSAGE</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="info-block">
+                            <div class="info-label">RESPONSE TIME</div>
+                            <div class="info-value">2-3 BUSINESS DAYS</div>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-label">COMMISSION</div>
+                            <div class="info-value">OPEN</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div id="modal" class="modal">
+        <button class="modal-close" aria-label="閉じる">×</button>
+        <div class="modal-content">
+            <img src="" alt="" class="modal-image">
+            <div class="modal-info">
+                <span class="modal-number"></span>
+                <h3 class="modal-title"></h3>
+                <p class="modal-year"></p>
+            </div>
+        </div>
+        <button class="modal-nav modal-prev" aria-label="前へ">‹</button>
+        <button class="modal-nav modal-next" aria-label="次へ">›</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 PLUTO'S MOON. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
