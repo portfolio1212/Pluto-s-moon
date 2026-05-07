@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalClose = modal.querySelector('.modal-close');
     const modalPrev = modal.querySelector('.modal-prev');
     const modalNext = modal.querySelector('.modal-next');
-    const contactForm = document.getElementById('contactForm');
+    const contactForm = document.querySelector('.contact-form');
 
     let currentModalIndex = 0;
 
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    contactForm.addEventListener('submit', (e) => {
+    if (contactForm) contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const formData = new FormData(contactForm);
@@ -192,18 +192,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const allImages = document.querySelectorAll('img');
-    allImages.forEach(img => {
-        img.style.opacity = '0';
-        img.style.transition = 'opacity 0.5s ease';
-        
-        if (img.complete) {
-            img.style.opacity = '1';
-        } else {
-            img.addEventListener('load', () => {
-                img.style.opacity = '1';
-            });
-        }
+
+allImages.forEach(img => {
+    img.style.transition = 'opacity 0.5s ease';
+
+    img.addEventListener('load', () => {
+        img.style.opacity = '1';
     });
+
+    img.style.opacity = '1';
+});
 
     console.log("Pluto's Moon portfolio initialized");
     console.log('Background: Pluto and Moon animation active');

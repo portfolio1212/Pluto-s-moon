@@ -294,8 +294,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 6rem 4rem;
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 1;
+    transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -1028,7 +1028,7 @@ body {
 
 @media (max-width: 768px) {
     .glitch {
-        font-size: 3rem;
+         font-size: clamp(2.2rem, 12vw, 3rem);
     }
 
     .section {
@@ -1087,3 +1087,4 @@ body {
         justify-content: center;
     }
 }
+
